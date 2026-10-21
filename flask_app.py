@@ -33,6 +33,10 @@ def presentation():
 def hobbies():
     return "Mes hobbies sont le handball, la nourriture et de faire marcher ma tête pour résoudre des problèmes."
 
+@app.get("/hobbies")
+def hobbies():
+    return "Mes  sont le handball, la nourriture et de faire marcher ma tête pour résoudre des problèmes."
+    
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
