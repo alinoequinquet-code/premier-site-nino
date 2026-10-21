@@ -29,6 +29,10 @@ def accueil():
 def presentation():
     return "Je m'appelle Alinoé Quinquet, je suis étudiant à l'iCAM en ingénierie."
 
+@app.get("/hobbies")
+def presentation():
+    return "Mes hobbies sont le handball, la nourriture et de faire marcher ma tête pour résoudre des problèmes."
+
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
