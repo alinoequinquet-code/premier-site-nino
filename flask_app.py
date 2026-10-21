@@ -8,7 +8,7 @@
 #  Les consignes sont dans le dossier "exercices/".
 # ---------------------------------------------------------------
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -27,17 +27,8 @@ def accueil():
 
 @app.get("/presentation")
 def presentation():
-    return """
-    <h1>Alinoé Quinquet</h1>
-    <p>Je suis étudiant en <strong>première année d'ingénierie à l'ICAM</strong>.</p>
-    <h2>Ce que j'aime</h2>
-    <ul>
-        <li>Le handball</li>
-        <li>La nourriture</li>
-        <li>Le code (bientôt insh'allah !)</li>
-    </ul>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" width="100">
-    """
+    return render_template("presentation.html", prenom="Alinoé", nom="Quinquet")
+    
 @app.get("/hobbies")
 def hobbies():
     return "Mes hobbies sont le handball, la nourriture et de faire marcher ma tête pour résoudre des problèmes."
