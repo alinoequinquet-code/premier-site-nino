@@ -27,7 +27,7 @@ def accueil():
 
 @app.get("/presentation")
 def presentation():
-    return "Je m'appel Alinoé Quinquet, je suis étudiant à l'iCAM en ingénierie"
+    return "Je m'appelle Alinoé Quinquet, je suis étudiant à l'iCAM en ingénierie."
 
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
