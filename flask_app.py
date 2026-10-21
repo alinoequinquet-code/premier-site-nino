@@ -27,16 +27,20 @@ def accueil():
 
 @app.get("/presentation")
 def presentation():
-    return "Je m'appelle Alinoé Quinquet, je suis étudiant à l'iCAM en ingénierie."
-
+    return """
+    <h1>Alinoé Quinquet</h1>
+    <p>Je suis étudiant en <strong>première année d'ingénierie à l'ICAM</strong>.</p>
+    <h2>Ce que j'aime</h2>
+    <ul>
+        <li>Le handball</li>
+        <li>La nourriture</li>
+        <li>Le code (bientôt insh'allah !)</li>
+    </ul>
+    """
 @app.get("/hobbies")
 def hobbies():
     return "Mes hobbies sont le handball, la nourriture et de faire marcher ma tête pour résoudre des problèmes."
 
-@app.get("/hobbies")
-def hobbies():
-    return "Mes  sont le handball, la nourriture et de faire marcher ma tête pour résoudre des problèmes."
-    
 # ---------------------------------------------------------------
 #  Ne pas modifier : utile seulement pour lancer le site
 #  sur votre propre ordinateur (python flask_app.py)
