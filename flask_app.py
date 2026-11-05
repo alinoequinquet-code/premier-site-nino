@@ -18,7 +18,7 @@ app = Flask(__name__)
 # Flask exécute la fonction accueil() et renvoie son résultat au navigateur.
 @app.get("/")
 def accueil():
-    return "Bienvenue les copains sur le site de Nino"
+    return render_template("accueil.html")
 
 
 # ---------------------------------------------------------------
